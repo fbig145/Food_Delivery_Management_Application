@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.clientController">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="1000.0" style="-fx-background-color: #333;">
+         <children>
+            <Text fill="WHITE" layoutX="392.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client's Page">
+               <font>
+                  <Font name="Geneva" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="productsView" layoutX="36.0" layoutY="107.0" prefHeight="246.0" prefWidth="410.0" />
+      <Button fx:id="viewProductsButton" layoutX="36.0" layoutY="383.0" mnemonicParsing="false" onAction="#viewProductsButtonOnAction" prefHeight="44.0" prefWidth="163.0" text="View Products" />
+      <Button fx:id="cancelButton" layoutX="419.0" layoutY="536.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="44.0" prefWidth="163.0" text="Cancel" />
+      <ListView fx:id="compView" layoutX="465.0" layoutY="107.0" prefHeight="246.0" prefWidth="296.0" />
+      <TextField fx:id="searchTextField" layoutX="794.0" layoutY="107.0" prefHeight="26.0" prefWidth="188.0" promptText="Search for Title" />
+      <Button fx:id="searchButton" layoutX="794.0" layoutY="148.0" mnemonicParsing="false" onAction="#searchButtonOnAction" prefHeight="26.0" prefWidth="188.0" text="Search for Title" />
+      <TextField fx:id="searchTextField1" layoutX="794.0" layoutY="194.0" prefHeight="26.0" prefWidth="188.0" promptText="Search for Rating" />
+      <Button fx:id="searchButton1" layoutX="794.0" layoutY="235.0" mnemonicParsing="false" onAction="#searchButtonOnAction1" prefHeight="26.0" prefWidth="188.0" text="Search for Rating" />
+      <TextField fx:id="searchTextField2" layoutX="794.0" layoutY="285.0" prefHeight="26.0" prefWidth="188.0" promptText="Search for Macros" />
+      <Button fx:id="searchButton2" layoutX="794.0" layoutY="326.0" mnemonicParsing="false" onAction="#searchButtonOnAction2" prefHeight="26.0" prefWidth="188.0" text="Search for Macros or Price" />
+      <TextField fx:id="searchAddTextField" layoutX="603.0" layoutY="383.0" promptText="Title" />
+      <Button fx:id="addCartButton" layoutX="603.0" layoutY="427.0" mnemonicParsing="false" onAction="#addCartButtonOnAction" prefHeight="26.0" prefWidth="101.0" text="Add to cart" />
+      <ListView fx:id="cartList" layoutX="293.0" layoutY="383.0" prefHeight="94.0" prefWidth="276.0" />
+      <Label layoutX="293.0" layoutY="484.0" text="Price:" />
+      <Label fx:id="priceLabel" layoutX="332.0" layoutY="484.0" prefHeight="17.0" prefWidth="58.0" text="0" />
+      <Button fx:id="placeButton" layoutX="803.0" layoutY="384.0" mnemonicParsing="false" onAction="#placeButtonOnAction" prefHeight="73.0" prefWidth="160.0" text="Place order" />
+      <Label fx:id="successLabel" layoutX="786.0" layoutY="484.0" prefHeight="17.0" prefWidth="194.0" textFill="RED" />
+   </children>
+</AnchorPane>

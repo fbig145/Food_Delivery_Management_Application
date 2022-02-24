@@ -1,0 +1,7 @@
+client ,Fresh Corn Tortillas ,Spiced Shrimp ,112 ,27-05-2021 ,12:04
+emanuel ,Pickled Shrimp ,Spicy Baked Shrimp ,108 ,27-05-2021 ,12:08
+client ,Pickled Shrimp ,Spicy Baked Shrimp ,17 ,27-05-2021 ,12:43
+client ,Pickled Shrimp ,Spicy Baked Shrimp ,17 ,27-05-2021 ,17:43
+client ,Prosciutto with Melon ,Oatmeal Lace Cookies ,17 ,27-05-2021 ,17:43
+client ,Barbecued Shrimp ,Sugarcane Shrimp ,149 ,27-05-2021 ,12:13
+alex ,Spiced Shrimp ,Barbecued Shrimp ,104 ,27-05-2021 ,17:30

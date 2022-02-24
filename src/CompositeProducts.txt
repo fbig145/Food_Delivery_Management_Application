@@ -1,0 +1,7 @@
+Ttitle , Rest
+meniu1,supa ceaun tocanita de pui
+meniu2,ciorba macaroane desert
+meniu3,supa de pui cartofi wedges pui pane
+meniu4,ciorba radauteana mamaliga papanasi
+meniu5,supa crema ardei prajitura
+meniu 6,supa cartofi desert

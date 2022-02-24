@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.reportsController">
+   <children>
+      <AnchorPane prefHeight="97.0" prefWidth="781.0" style="-fx-background-color: #333;">
+         <children>
+            <Text fill="WHITE" layoutX="342.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="startTF" layoutX="45.0" layoutY="148.0" promptText="Start hour" />
+      <TextField fx:id="endTF" layoutX="45.0" layoutY="188.0" promptText="End hour" />
+      <Button fx:id="generateButton1" layoutX="45.0" layoutY="231.0" mnemonicParsing="false" onAction="#generateButton1OnAction" prefHeight="45.0" prefWidth="160.0" text="Generate report" />
+      <Label layoutX="55.0" layoutY="114.0" text="Time interval of the orders" />
+      <Label layoutX="234.0" layoutY="114.0" prefHeight="17.0" prefWidth="168.0" text="Products ordered more than" />
+      <TextField fx:id="numberTF" layoutX="234.0" layoutY="148.0" promptText="Number" />
+      <Button layoutX="234.0" layoutY="231.0" mnemonicParsing="false" onAction="#generateButton2OnAction" prefHeight="45.0" prefWidth="160.0" text="Generate report" />
+      <TextField fx:id="number2TF" layoutX="419.0" layoutY="148.0" promptText="Number" />
+      <TextField fx:id="amountTF" layoutX="419.0" layoutY="188.0" promptText="Amount" />
+      <Button layoutX="419.0" layoutY="231.0" mnemonicParsing="false" onAction="#generateButton3OnAction" prefHeight="45.0" prefWidth="160.0" text="Generate report" />
+      <Label layoutX="429.0" layoutY="114.0" text="Clients and amount" />
+      <Label layoutX="606.0" layoutY="114.0" prefHeight="17.0" prefWidth="168.0" text="Orders in a specific day" />
+      <TextField fx:id="dateTF" layoutX="606.0" layoutY="148.0" promptText="Date" />
+      <Button layoutX="606.0" layoutY="231.0" mnemonicParsing="false" onAction="#generateButton4OnAction" prefHeight="45.0" prefWidth="160.0" text="Generate report" />
+      <Button fx:id="cancelButton" layoutX="311.0" layoutY="314.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="45.0" prefWidth="160.0" text="Cancel" />
+   </children>
+</AnchorPane>

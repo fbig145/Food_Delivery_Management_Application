@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.adminController">
+   <children>
+      <AnchorPane prefHeight="117.0" prefWidth="1350.0" style="-fx-background-color: #333;">
+         <children>
+            <Text fill="WHITE" layoutX="499.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administrator's Page">
+               <font>
+                  <Font name="Geneva" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="productsView" layoutX="40.0" layoutY="137.0" prefHeight="250.0" prefWidth="533.0" />
+      <Button fx:id="importButton" layoutX="40.0" layoutY="399.0" mnemonicParsing="false" onAction="#importButtonOnAction" prefHeight="44.0" prefWidth="158.0" text="Import products" />
+      <TextField fx:id="addTtitle" layoutX="613.0" layoutY="137.0" promptText="Title" />
+      <TextField fx:id="addRating" layoutX="613.0" layoutY="174.0" promptText="Rating" />
+      <TextField fx:id="addCalories" layoutX="613.0" layoutY="212.0" promptText="Calories" />
+      <TextField fx:id="addProteins" layoutX="613.0" layoutY="250.0" promptText="Proteins" />
+      <TextField fx:id="addFat" layoutX="613.0" layoutY="289.0" promptText="Fat" />
+      <TextField fx:id="addSodium" layoutX="613.0" layoutY="328.0" promptText="Sodium" />
+      <TextField fx:id="addPrice" layoutX="613.0" layoutY="363.0" promptText="Price" />
+      <Button fx:id="addProductButton" layoutX="613.0" layoutY="399.0" mnemonicParsing="false" onAction="#addProductButtonOnAction" prefHeight="44.0" prefWidth="161.0" text="Add product" />
+      <TextField fx:id="deleteTtitle" layoutX="791.0" layoutY="136.0" promptText="Title" />
+      <TextField fx:id="deleteRating" layoutX="791.0" layoutY="173.0" promptText="Rating" />
+      <TextField fx:id="deleteCalories" layoutX="791.0" layoutY="211.0" promptText="Calories" />
+      <TextField fx:id="deleteProteins" layoutX="791.0" layoutY="249.0" promptText="Proteins" />
+      <TextField fx:id="deleteFat" layoutX="791.0" layoutY="288.0" promptText="Fat" />
+      <TextField fx:id="deleteSodium" layoutX="791.0" layoutY="327.0" promptText="Sodium" />
+      <TextField fx:id="deletePrice" layoutX="791.0" layoutY="362.0" promptText="Price" />
+      <Button fx:id="deleteButton" layoutX="791.0" layoutY="398.0" mnemonicParsing="false" onAction="#deleteButtonOnAction" prefHeight="44.0" prefWidth="161.0" text="Delete product" />
+      <TextField fx:id="searchTitle" layoutX="973.0" layoutY="174.0" promptText="Title" />
+      <TextField fx:id="searchRating" layoutX="973.0" layoutY="211.0" promptText="Rating" />
+      <TextField fx:id="searchCalories" layoutX="973.0" layoutY="249.0" promptText="Calories" />
+      <TextField fx:id="searchProteins" layoutX="973.0" layoutY="287.0" promptText="Proteins" />
+      <TextField fx:id="searchFat" layoutX="973.0" layoutY="326.0" promptText="Fat" />
+      <TextField fx:id="searchSodium" layoutX="973.0" layoutY="365.0" promptText="Sodium" />
+      <TextField fx:id="searchPrice" layoutX="973.0" layoutY="400.0" promptText="Price" />
+      <Button fx:id="modifyButton" layoutX="1151.0" layoutY="442.0" mnemonicParsing="false" onAction="#modifyButtonOnAction" prefHeight="44.0" prefWidth="161.0" text="Modify product" />
+      <Button fx:id="genButton" layoutX="1053.0" layoutY="567.0" mnemonicParsing="false" onAction="#genButtonOnAction" prefHeight="87.0" prefWidth="256.0" text="Generate Reports Here!" />
+      <Button fx:id="cancelButton" layoutX="695.0" layoutY="610.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="44.0" prefWidth="158.0" text="Cancel" />
+      <TextField fx:id="modifyTitle" layoutX="1152.0" layoutY="174.0" promptText="Title" />
+      <TextField fx:id="modifyRating" layoutX="1152.0" layoutY="211.0" promptText="Rating" />
+      <TextField fx:id="modifyCalories" layoutX="1152.0" layoutY="249.0" promptText="Calories" />
+      <TextField fx:id="modifyProteins" layoutX="1152.0" layoutY="287.0" promptText="Proteins" />
+      <TextField fx:id="modifyFat" layoutX="1152.0" layoutY="326.0" promptText="Fat" />
+      <TextField fx:id="modifySodium" layoutX="1152.0" layoutY="365.0" promptText="Sodium" />
+      <TextField fx:id="modifyPrice" layoutX="1152.0" layoutY="400.0" promptText="Price" />
+      <Label layoutX="978.0" layoutY="142.0" text="Product you want to modify" />
+      <Label layoutX="1167.0" layoutY="142.0" text="New Characteristics" />
+      <TextField fx:id="compositeTitle" layoutX="40.0" layoutY="500.0" promptText="Title" />
+      <TextArea fx:id="compositeRest" layoutX="41.0" layoutY="541.0" prefHeight="125.0" prefWidth="298.0" promptText="Write here the base products that forms the new product" />
+      <Button fx:id="createButton" layoutX="220.0" layoutY="500.0" mnemonicParsing="false" onAction="#createButtonOnAction" prefHeight="26.0" prefWidth="116.0" text="Create product" />
+      <ListView fx:id="compositeView" layoutX="373.0" layoutY="501.0" prefHeight="135.0" prefWidth="291.0" />
+      <Button fx:id="viewCompButton" layoutX="431.0" layoutY="641.0" mnemonicParsing="false" onAction="#viewCompButtonOnAction" prefHeight="26.0" prefWidth="176.0" text="View Composite Products" />
+   </children>
+</AnchorPane>
